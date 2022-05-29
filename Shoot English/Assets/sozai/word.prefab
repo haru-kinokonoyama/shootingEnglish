@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5180229493744612667}
   - component: {fileID: 1980159965}
   - component: {fileID: 1980159960}
+  - component: {fileID: 1253918810871034209}
   m_Layer: 0
   m_Name: word
   m_TagString: TargetWord
@@ -85,9 +86,9 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8252412449293424681}
-  m_Text: Hello World
+  m_Text: a
   m_OffsetZ: 0
-  m_CharacterSize: 1
+  m_CharacterSize: 2
   m_LineSpacing: 1
   m_Anchor: 0
   m_Alignment: 0
@@ -126,8 +127,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 8.215505, y: 2, z: 6}
-  m_Center: {x: 3.381563, y: -0.66663015, z: 0}
+  m_Size: {x: 3, y: 2.5, z: 6}
+  m_Center: {x: 0.6, y: -1.4, z: 0}
 --- !u!114 &1980159965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,7 +151,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8252412449293424681}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 20c72fefdce398a458c4ab7f4cbaa7f2, type: 3}
@@ -239,3 +240,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1253918810871034209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8252412449293424681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b41be7b2c9e885c47b1f70b66ad5cac6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  changetext: {fileID: 8252412449293424681}
+  text: {fileID: 0}
+  alphabet: 
