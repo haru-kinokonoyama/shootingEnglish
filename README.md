@@ -1,1 +1,3 @@
 # shootingEnglish
+個人的にOculas Quest2でプレイできる英単語シューティングを開発中<br>
+アルファベットが落下してくる処理をfallenで作成中
