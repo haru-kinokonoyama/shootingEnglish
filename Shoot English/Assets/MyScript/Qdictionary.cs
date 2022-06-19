@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using System.Linq;
@@ -7,8 +7,8 @@ using UnityEngine;
 public class Qdictionary : MonoBehaviour
 {
     public string japanese;
-    private static readonly string[] JAPANESE = new string[] { "‚è‚ñ‚²", "‚İ‚©‚ñ", "ƒoƒiƒi" };
-    public string ansewer;
+    private static readonly string[] JAPANESE = new string[] { "ã‚Šã‚“ã”", "ã¿ã‹ã‚“", "ãƒãƒŠãƒŠ" };
+    public static string ansewer;
     Dictionary<string, string> dict = new Dictionary<string,string>();
 
     public List<string> Keys;
@@ -19,9 +19,10 @@ public class Qdictionary : MonoBehaviour
     void Start()
     {
         japanese = JAPANESE.ElementAt(Random.Range(0, JAPANESE.Count()));
-        dict.Add("‚è‚ñ‚²","apple");
-        dict.Add("‚İ‚©‚ñ", "orange");
-        dict.Add("ƒoƒiƒi", "banana");
+        dict.Add("ã‚Šã‚“ã”","apple");
+        dict.Add("ã¿ã‹ã‚“", "orange");
+        dict.Add("ãƒãƒŠãƒŠ", "banana");
+        ansewer = dict[japanese];
 
         //text.text = japanese;
 
@@ -32,10 +33,11 @@ public class Qdictionary : MonoBehaviour
     {
         text.text = japanese;
         ansewer = dict[japanese];
-        for(int i = 0; i < ansewer.Length-1; i++)
+        /*for(int i = 0; i < ansewer.Length-1; i++)
         {
 
-        }
+        }*/
         
     }
+
 }

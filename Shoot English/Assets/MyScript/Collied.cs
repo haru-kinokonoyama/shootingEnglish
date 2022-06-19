@@ -1,14 +1,15 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Collied : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
         
     }
+
+    public GameObject inputText;
 
     public GameObject destroyEffect;
 
@@ -17,29 +18,39 @@ public class Collied : MonoBehaviour
 
     void OnTriggerEnter(Collider collision)
     {
-        Debug.Log("Õ“Ë‚µ‚½ƒIƒuƒWƒFƒNƒgF" + gameObject.name);
-        Debug.Log("Õ“Ë‚³‚ê‚½ƒIƒuƒWƒFƒNƒgF" + collision.gameObject.name);
+        Debug.Log("è¡çªã—ãŸã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆï¼š" + gameObject.name);
+        Debug.Log("è¡çªã•ã‚ŒãŸã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆï¼š" + collision.gameObject.name);
 
         //source.PlayOneShot(destroyMusic);
         if(collision.gameObject.tag != "TargetWord")
         {
             GenerateEffect();
+            //æ–‡å­—å–å¾—
+            InputAlphabet.inputAlphabetList(this.gameObject);
 
             Destroy(collision.gameObject);
-            Destroy(this.gameObject);
+            this.gameObject.SetActive(false);
+            StartCoroutine("Wait");
 
         }
 
     }
 
+    private IEnumerator Wait(){
+    //3ç§’å¾…ã¤
+    yield return new WaitForSeconds(3.0f);
+    //3ç§’å¾…ã£ãŸå¾Œã®å‡¦ç†
+    Destroy(this.gameObject);
+    }
+
  
 
-    //ƒGƒtƒFƒNƒg‚ğ¶¬‚·‚é
+    //ã‚¨ãƒ•ã‚§ã‚¯ãƒˆã‚’ç”Ÿæˆã™ã‚‹
     void GenerateEffect()
     {
-        //ƒGƒtƒFƒNƒg‚ğ¶¬‚·‚é
+        //ã‚¨ãƒ•ã‚§ã‚¯ãƒˆã‚’ç”Ÿæˆã™ã‚‹
         GameObject effect = Instantiate(destroyEffect) as GameObject;
-        //ƒGƒtƒFƒNƒg‚ª”­¶‚·‚éêŠ‚ğŒˆ’è‚·‚é(“GƒIƒuƒWƒFƒNƒg‚ÌêŠ)
+        //ã‚¨ãƒ•ã‚§ã‚¯ãƒˆãŒç™ºç”Ÿã™ã‚‹å ´æ‰€ã‚’æ±ºå®šã™ã‚‹(æ•µã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®å ´æ‰€)
         effect.transform.position = new Vector3 (this.gameObject.transform.position.x+1.0f, this.gameObject.transform.position.y, this.gameObject.transform.position.z);
     }
 

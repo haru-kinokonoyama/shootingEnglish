@@ -5,38 +5,38 @@ using UnityEngine;
 public class CreateRandomPosition : MonoBehaviour
 {
     [SerializeField]
-    [Tooltip("¶¬‚·‚éGameObject")]
+    [Tooltip("ç”Ÿæˆã™ã‚‹GameObject")]
     private GameObject createPrefab;
     [SerializeField]
-    [Tooltip("¶¬‚·‚é”ÍˆÍA")]
+    [Tooltip("ç”Ÿæˆã™ã‚‹ç¯„å›²A")]
     private Transform rangeA;
     [SerializeField]
-    [Tooltip("¶¬‚·‚é”ÍˆÍB")]
+    [Tooltip("ç”Ÿæˆã™ã‚‹ç¯„å›²B")]
     private Transform rangeB;
 
-    // Œo‰ßŠÔ
+    //çµŒéæ™‚é–“
     private float time;
 
     // Update is called once per frame
     void Update()
     {
-        // ‘OƒtƒŒ[ƒ€‚©‚ç‚ÌŠÔ‚ğ‰ÁZ‚µ‚Ä‚¢‚­
+        // å‰ãƒ•ãƒ¬ãƒ¼ãƒ ã‹ã‚‰ã®æ™‚é–“åŠ ç®—
         time = time + Time.deltaTime;
 
-        // –ñ0.5•b’u‚«‚Éƒ‰ƒ“ƒ_ƒ€‚É¶¬‚³‚ê‚é‚æ‚¤‚É‚·‚éB
-        if (time > 0.1f)
+        // 0.5ç§’ãŠãã«ãƒ©ãƒ³ãƒ€ãƒ ç”Ÿæˆ
+        if (time > 0.5f)
         {
-            // rangeA‚ÆrangeB‚ÌxÀ•W‚Ì”ÍˆÍ“à‚Åƒ‰ƒ“ƒ_ƒ€‚È”’l‚ğì¬
+            // rangeAã¨rangeBã®xåº§æ¨™ã®ç¯„å›²å†…ã§ãƒ©ãƒ³ãƒ€ãƒ ãªæ•°å€¤ã‚’ä½œæˆ
             float x = Random.Range(rangeA.position.x, rangeB.position.x);
-            // rangeA‚ÆrangeB‚ÌyÀ•W‚Ì”ÍˆÍ“à‚Åƒ‰ƒ“ƒ_ƒ€‚È”’l‚ğì¬
+            // rangeAã¨rangeBã®yåº§æ¨™ã®ç¯„å›²å†…ã§ãƒ©ãƒ³ãƒ€ãƒ ãªæ•°å€¤ã‚’ä½œæˆ
             float y = Random.Range(rangeA.position.y, rangeB.position.y);
-            // rangeA‚ÆrangeB‚ÌzÀ•W‚Ì”ÍˆÍ“à‚Åƒ‰ƒ“ƒ_ƒ€‚È”’l‚ğì¬
+            // rangeAã¨rangeBã®zåº§æ¨™ã®ç¯„å›²å†…ã§ãƒ©ãƒ³ãƒ€ãƒ ãªæ•°å€¤ã‚’ä½œæˆ
             float z = Random.Range(rangeA.position.z, rangeB.position.z);
 
-            // GameObject‚ğã‹L‚ÅŒˆ‚Ü‚Á‚½ƒ‰ƒ“ƒ_ƒ€‚ÈêŠ‚É¶¬
+            //  GameObjectã‚’ä¸Šè¨˜ã§æ±ºã¾ã£ãŸãƒ©ãƒ³ãƒ€ãƒ ãªå ´æ‰€ã«ç”Ÿæˆ
             Instantiate(createPrefab, new Vector3(x, y, z), createPrefab.transform.rotation);
 
-            // Œo‰ßŠÔƒŠƒZƒbƒg
+            //çµŒéæ™‚é–“ãƒªã‚»ãƒƒãƒˆ
             time = 0f;
 
         }
