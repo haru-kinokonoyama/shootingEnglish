@@ -3,13 +3,13 @@ using UnityEngine;
 public class Balloon : MonoBehaviour
 {
     // 振幅
-    [SerializeField] private float _amplitude = 1;
+    private float _amplitude;
 
     // 周期
-    [SerializeField] private float _period = 1;
+    private float _period;
 
     // 位相
-    [SerializeField, Range(0, 1)] private float _phase = 0;
+    private float _phase;
 
     // 動かす軸
     private enum Axis
@@ -29,6 +29,10 @@ public class Balloon : MonoBehaviour
     // 初期化
     private void Start()
     {
+        _amplitude = Random.Range(0.4f, 0.6f);
+        _period = Random.Range(4.0f, 6.0f);
+        _phase = Random.Range(0.0f, 1.0f);
+
         rigid = GetComponent<Rigidbody>();
         //pos = transform.position;
         _transform = transform;
@@ -61,7 +65,7 @@ public class Balloon : MonoBehaviour
 
         // 位置を反映
         _transform.localPosition = _initPosition + changePos;
-        _initPosition.y += 0.01f;
+        _initPosition.y += 0.015f;
     }
 
     /*void FixedUpdate(){

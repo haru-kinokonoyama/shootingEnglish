@@ -58,10 +58,10 @@ public class Collied : MonoBehaviour
     void Update()
     {
 
-        /*if (this.gameObject.transform.position.y < -5)
+        if (this.gameObject.transform.position.y > 30)
         {
             Destroy(this.gameObject);
-        }*/
+        }
 
     }
 
