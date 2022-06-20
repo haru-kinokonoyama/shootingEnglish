@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637908228817831052
-    m_Hash: 2195607649
+      ticks: 637913004595063491
+    m_Hash: 1110745276
   m_LockFileStatus:
     m_FilePath: C:/Users/kinokonoyama/Desktop/VR/shootingEnglish/Shoot English/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637908228834978963
-    m_Hash: 294626204
+      ticks: 637913004595110669
+    m_Hash: 190080397
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
