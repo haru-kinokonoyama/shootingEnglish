@@ -14,7 +14,7 @@ public class BalloonColor : MonoBehaviour
          // マテリアルの配列をmaterialsという名前に与える
         Material[] materials = GetComponent<Renderer>().sharedMaterials;
         // materialsの18番をReflectorLampRedON（[SerializeField] Material で名前変えたらここも変えないといけないよ）に置き換える
-        materials[1] = _material[Random.Range(1,3)];
+        materials[1] = _material[Random.Range(0,4)];
         // sharedMaterials機能をmaterialsに与える
         GetComponent<Renderer>().sharedMaterials = materials;
     }
