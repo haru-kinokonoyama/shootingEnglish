@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/MyScenes/GameScene.unity
+- path: Assets/Handpainted_Forest_pack/Map_v1.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
