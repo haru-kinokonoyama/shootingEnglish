@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/MyScenes/GameSceneBow.unity
+    guid: 8ebce23f50cff0c479cde268f9dfcf4a
+  - enabled: 1
     path: Assets/MyScenes/BowTest.unity
     guid: fe346ed8257bdbf4e88049e0142b0c20
   - enabled: 1

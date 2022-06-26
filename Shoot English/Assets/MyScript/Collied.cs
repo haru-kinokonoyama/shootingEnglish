@@ -24,6 +24,7 @@ public class Collied : MonoBehaviour
         //source.PlayOneShot(destroyMusic);
         if(collision.gameObject.tag != "TargetWord")
         {
+            source.PlayOneShot(destroyMusic);
             GenerateEffect();
             //文字取得
             InputAlphabet.inputAlphabetList(this.gameObject);
@@ -50,7 +51,7 @@ public class Collied : MonoBehaviour
     {
         //エフェクトを生成する
         GameObject effect = Instantiate(destroyEffect) as GameObject;
-        //エフェクトが発生する場所を決定する(敵オブジェクトの場所)
+        //エフェクトが発生する場所を決定する(オブジェクトの場所)
         effect.transform.position = new Vector3 (this.gameObject.transform.position.x+1.0f, this.gameObject.transform.position.y, this.gameObject.transform.position.z);
     }
 
