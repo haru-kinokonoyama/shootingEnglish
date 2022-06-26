@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/MyScenes/GameScene.unity
+- path: Assets/MyScenes/BowTest.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

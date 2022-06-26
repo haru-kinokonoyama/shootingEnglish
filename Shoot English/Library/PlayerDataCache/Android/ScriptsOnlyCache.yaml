@@ -25,6 +25,7 @@ ScriptsOnlyBuild:
     Oculus.VR.dll:
     - OVRCameraRig
     - OVRDebugInfo
+    - OVRGrabbable
     - OVRGrabber
     - OVRHeadsetEmulator
     - OVRManager
@@ -59,7 +60,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Text
   sceneClasses:
-    Assets/MyScenes/GameScene.unity:
+    Assets/MyScenes/BowTest.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -90,6 +91,93 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 90
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 2104}
+    - Class: 114
+      Script: {instanceID: 2192}
+    - Class: 114
+      Script: {instanceID: 2234}
+    - Class: 114
+      Script: {instanceID: 2480}
+    - Class: 114
+      Script: {instanceID: 2552}
+    - Class: 114
+      Script: {instanceID: 2882}
+    - Class: 114
+      Script: {instanceID: 3490}
+    - Class: 114
+      Script: {instanceID: 4054}
+    - Class: 114
+      Script: {instanceID: 4794}
+    - Class: 114
+      Script: {instanceID: 5026}
+    - Class: 114
+      Script: {instanceID: 5280}
+    - Class: 114
+      Script: {instanceID: 5630}
+    - Class: 114
+      Script: {instanceID: 5654}
+    - Class: 114
+      Script: {instanceID: 6564}
+    - Class: 114
+      Script: {instanceID: 6592}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 135
+      Script: {instanceID: 0}
+    - Class: 136
+      Script: {instanceID: 0}
+    - Class: 137
+      Script: {instanceID: 0}
+    - Class: 143
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    Assets/MyScenes/GameScene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
     - Class: 82
       Script: {instanceID: 0}
     - Class: 83
@@ -109,71 +197,63 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1690}
+      Script: {instanceID: 1692}
     - Class: 114
-      Script: {instanceID: 1694}
+      Script: {instanceID: 1696}
     - Class: 114
-      Script: {instanceID: 1952}
+      Script: {instanceID: 1954}
     - Class: 114
-      Script: {instanceID: 2018}
+      Script: {instanceID: 2020}
     - Class: 114
-      Script: {instanceID: 2102}
+      Script: {instanceID: 2104}
     - Class: 114
-      Script: {instanceID: 2190}
+      Script: {instanceID: 2192}
     - Class: 114
-      Script: {instanceID: 2232}
+      Script: {instanceID: 2234}
     - Class: 114
-      Script: {instanceID: 2342}
+      Script: {instanceID: 2344}
     - Class: 114
-      Script: {instanceID: 2478}
+      Script: {instanceID: 2480}
     - Class: 114
-      Script: {instanceID: 2550}
+      Script: {instanceID: 2632}
     - Class: 114
-      Script: {instanceID: 2630}
+      Script: {instanceID: 2882}
     - Class: 114
-      Script: {instanceID: 2880}
+      Script: {instanceID: 3158}
     - Class: 114
-      Script: {instanceID: 3156}
+      Script: {instanceID: 3326}
     - Class: 114
-      Script: {instanceID: 3324}
+      Script: {instanceID: 3384}
     - Class: 114
-      Script: {instanceID: 3382}
+      Script: {instanceID: 3490}
     - Class: 114
-      Script: {instanceID: 3488}
+      Script: {instanceID: 3498}
     - Class: 114
-      Script: {instanceID: 3496}
+      Script: {instanceID: 3942}
     - Class: 114
-      Script: {instanceID: 3940}
+      Script: {instanceID: 4284}
     - Class: 114
-      Script: {instanceID: 4052}
+      Script: {instanceID: 4322}
     - Class: 114
-      Script: {instanceID: 4282}
+      Script: {instanceID: 4368}
     - Class: 114
-      Script: {instanceID: 4364}
+      Script: {instanceID: 4680}
     - Class: 114
-      Script: {instanceID: 4676}
+      Script: {instanceID: 5026}
     - Class: 114
-      Script: {instanceID: 5022}
+      Script: {instanceID: 5040}
     - Class: 114
-      Script: {instanceID: 5036}
+      Script: {instanceID: 5186}
     - Class: 114
-      Script: {instanceID: 5182}
+      Script: {instanceID: 5280}
     - Class: 114
-      Script: {instanceID: 5276}
+      Script: {instanceID: 5630}
     - Class: 114
-      Script: {instanceID: 5626}
+      Script: {instanceID: 5654}
     - Class: 114
-      Script: {instanceID: 5650}
+      Script: {instanceID: 5958}
     - Class: 114
-      Script: {instanceID: 5954}
-    - Class: 114
-      Script: {instanceID: 6138}
-    - Class: 114
-      Script: {instanceID: 6560}
-    - Class: 114
-      Script: {instanceID: 6588}
-    - Class: 114
-      Script: {instanceID: 33854}
+      Script: {instanceID: 6142}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -193,8 +273,6 @@ ScriptsOnlyBuild:
     - Class: 198
       Script: {instanceID: 0}
     - Class: 199
-      Script: {instanceID: 0}
-    - Class: 213
       Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
@@ -229,6 +307,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
     - Class: 90
       Script: {instanceID: 0}
     - Class: 91
@@ -240,27 +320,27 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 2102}
+      Script: {instanceID: 2104}
     - Class: 114
-      Script: {instanceID: 2190}
+      Script: {instanceID: 2192}
     - Class: 114
-      Script: {instanceID: 2232}
+      Script: {instanceID: 2234}
     - Class: 114
-      Script: {instanceID: 2478}
+      Script: {instanceID: 2480}
     - Class: 114
-      Script: {instanceID: 2880}
+      Script: {instanceID: 2882}
     - Class: 114
-      Script: {instanceID: 3488}
+      Script: {instanceID: 3490}
     - Class: 114
-      Script: {instanceID: 5022}
+      Script: {instanceID: 5026}
     - Class: 114
-      Script: {instanceID: 5036}
+      Script: {instanceID: 5040}
     - Class: 114
-      Script: {instanceID: 5276}
+      Script: {instanceID: 5280}
     - Class: 114
-      Script: {instanceID: 5626}
+      Script: {instanceID: 5630}
     - Class: 114
-      Script: {instanceID: 5650}
+      Script: {instanceID: 5654}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 135
@@ -1868,6 +1948,12 @@ ScriptsOnlyBuild:
     className: SelectorDebugVisual
   - hash:
       serializedVersion: 2
+      Hash: 75611a8cd03e4a698912c266a762fbe9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CanvasManager
+  - hash:
+      serializedVersion: 2
       Hash: ef98ba37658e9402df9f1926c41c352c
     assemblyName: Oculus.Interaction.Samples.dll
     namespaceName: Oculus.Interaction.Samples
@@ -3420,14 +3506,9 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: OculusSampleFramework
     className: TrackSegment
-  - hash:
-      serializedVersion: 2
-      Hash: 75611a8cd03e4a698912c266a762fbe9
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CanvasManager
   platform: 13
   scenePathNames:
+  - Assets/MyScenes/BowTest.unity
   - Assets/MyScenes/GameScene.unity
   - Assets/MyScenes/StartMenu.unity
   playerPath: C:/Users/kinokonoyama/Desktop/VR/shootingEnglish/Shoot English/kaihatu.apk
