@@ -6,17 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/MyScenes/StartMenu.unity
+    guid: dc7f9a40f9fa5534da7524f336b34510
+  - enabled: 1
     path: Assets/MyScenes/GameSceneBow.unity
     guid: 8ebce23f50cff0c479cde268f9dfcf4a
-  - enabled: 1
-    path: Assets/MyScenes/BowTest.unity
-    guid: fe346ed8257bdbf4e88049e0142b0c20
   - enabled: 1
     path: Assets/MyScenes/GameScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/MyScenes/StartMenu.unity
-    guid: dc7f9a40f9fa5534da7524f336b34510
+    path: Assets/MyScenes/BowTest.unity
+    guid: fe346ed8257bdbf4e88049e0142b0c20
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 35f3da76a59c2d747937a371151bd9eb, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: a5725cc74a26fd44f85a50054bf7cab1, type: 2}
