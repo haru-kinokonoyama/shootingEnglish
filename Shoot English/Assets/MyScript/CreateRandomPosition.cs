@@ -24,7 +24,7 @@ public class CreateRandomPosition : MonoBehaviour
         time = time + Time.deltaTime;
 
         // 0.5秒おきにランダム生成
-        if (time > 1.3f)
+        if (time > 0.7f)
         {
             // rangeAとrangeBのx座標の範囲内でランダムな数値を作成
             float x = Random.Range(rangeA.position.x, rangeB.position.x);

@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 
 
 public class Judge : MonoBehaviour
@@ -22,10 +22,19 @@ public class Judge : MonoBehaviour
         string displayInput = string.Join("",InputAlphabet.playerInputList);
         if(displayInput==Qdictionary.ansewer){
             cosource.PlayOneShot(correct);
-            buttoncube.GetComponent<Renderer>().material.color = Color.white;
+            StartCoroutine("Wait");
+            //buttoncube.GetComponent<Renderer>().material.color = Color.white;
         } else  {
             incosource.PlayOneShot(incorrect);
-            buttoncube.GetComponent<Renderer>().material.color = Color.black;
+            //buttoncube.GetComponent<Renderer>().material.color = Color.black;
         }
+    }
+
+    private IEnumerator Wait(){
+    //2秒待つ
+    yield return new WaitForSeconds(2.0f);
+    //2秒待った後の処理
+    InputAlphabet.playerInputList.Clear();
+    SceneManager.LoadSceneAsync("ReplayMenu");
     }
 }

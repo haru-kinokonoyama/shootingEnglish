@@ -41,7 +41,7 @@ public class BowAction : MonoBehaviour
         }
 
         if (OVRInput.Get(OVRInput.Button.SecondaryIndexTrigger)){
-            bow.transform.position = new Vector3(0.45f,1.262f,0.84f);
+            bow.transform.position = new Vector3(0.45f,1.8f,0.84f);
             bow.transform.rotation = Quaternion.Euler(0, 0, 0);
         }
 
