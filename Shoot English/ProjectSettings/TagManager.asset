@@ -6,6 +6,7 @@ TagManager:
   tags:
   - TargetWord
   - New tag
+  - yuka
   layers:
   - Default
   - TransparentFX

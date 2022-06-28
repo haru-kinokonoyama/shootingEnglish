@@ -7,6 +7,7 @@ public class BowAction : MonoBehaviour
     //OVRGrabbable grabbedObject = new OVRGrabbable();
     public OVRGrabbable grabbedObject;
 
+    public GameObject bow;
     public GameObject arrow;
     public GameObject arrowclone;
     Transform arrowStartPosition;
@@ -21,6 +22,10 @@ public class BowAction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(grabbedObject.isGrabbed){
+            
+        }
+
         if(boolgrabbed==false){
             IsGrabbed();
         }
@@ -33,6 +38,11 @@ public class BowAction : MonoBehaviour
                 Debug.Log("弓矢生成");
                 Debug.Log(arrowStartPosition.position);
             }
+        }
+
+        if (OVRInput.Get(OVRInput.Button.SecondaryIndexTrigger)){
+            bow.transform.position = new Vector3(0.45f,1.262f,0.84f);
+            bow.transform.rotation = Quaternion.Euler(0, 0, 0);
         }
 
         

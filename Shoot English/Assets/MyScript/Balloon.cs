@@ -65,7 +65,7 @@ public class Balloon : MonoBehaviour
 
         // 位置を反映
         _transform.localPosition = _initPosition + changePos;
-        _initPosition.y += 0.015f;
+        _initPosition.y += 0.03f;
     }
 
     /*void FixedUpdate(){
