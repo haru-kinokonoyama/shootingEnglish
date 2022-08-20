@@ -1,4 +1,2 @@
 # shootingEnglish
-Unityを用いてOculas Quest2でプレイできる英単語シューティングを開発中<br>
-アルファベットが落下してくる処理をfallenブランチで作成中<br>
-mainブランチの基礎は銃が撃てるのみ
+Unityを用いてOculas Quest2でプレイできる英単語シューティングを開発
