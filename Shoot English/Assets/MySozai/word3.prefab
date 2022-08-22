@@ -145,7 +145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputText: {fileID: 385279813263904637}
   destroyEffect: {fileID: 2955623459812423943, guid: f5507a8c6a22c404ab324980c4e8a11b, type: 3}
-  destroyMusic: {fileID: 8300000, guid: 20c72fefdce398a458c4ab7f4cbaa7f2, type: 3}
+  destroyMusic: {fileID: 8300000, guid: 8ea4b97819578f045b77b8fa47e17e74, type: 3}
   source: {fileID: 8637548482851946636}
 --- !u!82 &8637548482851946636
 AudioSource:
@@ -157,7 +157,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 20c72fefdce398a458c4ab7f4cbaa7f2, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 8ea4b97819578f045b77b8fa47e17e74, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
