@@ -13,8 +13,9 @@ public class Collied : MonoBehaviour
 
     public GameObject destroyEffect;
 
-    public AudioClip destroyMusic;
-    public AudioSource source;
+    public GameObject destroyMusicObj;
+    //public AudioClip destroyMusic;
+    //public AudioSource source;
 
     void OnTriggerEnter(Collider collision)
     {
@@ -24,7 +25,8 @@ public class Collied : MonoBehaviour
         //source.PlayOneShot(destroyMusic);
         if(collision.gameObject.tag != "TargetWord")
         {
-            source.PlayOneShot(destroyMusic);
+            //source.PlayOneShot(destroyMusic);
+            Instantiate(destroyMusicObj,transform.position, transform.rotation);
             GenerateEffect();
             //文字取得
             InputAlphabet.inputAlphabetList(this.gameObject);
