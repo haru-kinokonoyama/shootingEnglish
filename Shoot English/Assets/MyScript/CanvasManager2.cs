@@ -6,6 +6,7 @@ public class CanvasManager2 : MonoBehaviour
 {
     public GameObject Canvas3;
     public GameObject Canvas2;
+    public GameObject InputCamvas;
     private bool pushFlag = true;  // ボタン押しすぎない用
     public bool check = true;       // 条件分岐用のbool変数
 
@@ -16,7 +17,9 @@ public class CanvasManager2 : MonoBehaviour
         if (OVRInput.Get(OVRInput.Button.Three))
         {
             Canvas2.SetActive(false);
+            InputCamvas.SetActive(true);
             Canvas3.SetActive(true);
+
 
             /*if (pushFlag == false)
             {
