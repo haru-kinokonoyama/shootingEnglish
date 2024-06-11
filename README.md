@@ -6,8 +6,8 @@ Unityを用いてOculas Quest2でプレイできる英単語シューティン�
 
 ## ハッカソン
 https://hacku.yahoo.co.jp/hacku2022online/
-（プレゼンテーションは動画30:30～33:30）
+/br（プレゼンテーションは動画30:30～33:30）
 
 ## ハッカソン発表資料(OneDrive ppt資料)
 https://1drv.ms/p/c/9465fdf55ab3f9c0/EcD5s1r1_WUggJSjBwAAAAABECxpbrGsOX8pEtkBkt0y3g?e=GUSJ1A
-誰でも閲覧できます．デモ動画も入っています
+/br 誰でも閲覧できます．デモ動画も入っています
