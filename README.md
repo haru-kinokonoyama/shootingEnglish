@@ -1,4 +1,4 @@
-# shootingEnglish
+# Spellion VR
 
 ## 概要
 Unityを用いてOculas Quest2でプレイできる英単語シューティング『Spellion VR』を開発
